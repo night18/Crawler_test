@@ -34,7 +34,7 @@ async function finderExecution(){
 	}
 
 	try {
-		const response = await window.fetch(finderParamas, {
+		const response = await window.fetch(finderParamas(), {
 			credentials: "include"
 		});
 
