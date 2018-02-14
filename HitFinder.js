@@ -3,12 +3,12 @@ let finderTimeout = null
 /*Set the paramas for finding the HITs*/
 function finderParamas(){
 	const url = new window.URL("https://worker.mturk.com/");
-	url.searchParams.append("sort", storage.hitFinder["filter-sort"]);
-	url.searchParams.append("page_size", storage.hitFinder["filter-page-size"]);
-	url.searchParams.append("filters[masters]", storage.hitFinder["filter-masters"]);
-	url.searchParams.append("filters[qualified]", storage.hitFinder["filter-qualified"]);
-	url.searchParams.append("filters[min_reward]", storage.hitFinder["filter-min-reward"]);
-	url.searchParams.append("filters[search_term]", storage.hitFinder["filter-search-term"]);
+	// url.searchParams.append("sort", storage.hitFinder["filter-sort"]);
+	// url.searchParams.append("page_size", storage.hitFinder["filter-page-size"]);
+	// url.searchParams.append("filters[masters]", storage.hitFinder["filter-masters"]);
+	// url.searchParams.append("filters[qualified]", storage.hitFinder["filter-qualified"]);
+	// url.searchParams.append("filters[min_reward]", storage.hitFinder["filter-min-reward"]);
+	// url.searchParams.append("filters[search_term]", storage.hitFinder["filter-search-term"]);
 	url.searchParams.append("format", "json");
 
 	return url;
